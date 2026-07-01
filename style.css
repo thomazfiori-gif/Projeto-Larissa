@@ -1,0 +1,40 @@
+function mostrarMensagem(){
+
+  document.getElementById("mensagem").innerHTML =
+  "🌎 Tecnologia e sustentabilidade caminham juntas no agro moderno!";
+}
+
+/* CONTADORES */
+
+let contador1 = 0;
+let contador2 = 0;
+let contador3 = 0;
+
+const intervalo = setInterval(() => {
+
+  if(contador1 < 1500){
+    contador1 += 15;
+    document.getElementById("contador1").innerHTML = contador1 + "+";
+  }
+
+  if(contador2 < 5000){
+    contador2 += 50;
+    document.getElementById("contador2").innerHTML = contador2 + "L";
+  }
+
+  if(contador3 < 800){
+    contador3 += 8;
+    document.getElementById("contador3").innerHTML = contador3 + "+";
+  }
+
+}, 30);
+
+/* FORMULÁRIO */
+
+document.getElementById("formulario")
+.addEventListener("submit", function(event){
+
+  event.preventDefault();
+
+  alert("Mensagem enviada com sucesso! 🌱");
+});

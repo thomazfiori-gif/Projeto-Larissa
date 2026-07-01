@@ -1,0 +1,323 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:'Poppins', sans-serif;
+  background:#f5fff5;
+  color:#333;
+}
+
+/* MENU */
+
+.navbar{
+  position:fixed;
+  width:100%;
+  top:0;
+  background:#1b5e20;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px 40px;
+  z-index:1000;
+}
+
+.logo{
+  color:white;
+  font-size:24px;
+  font-weight:700;
+}
+
+.menu{
+  display:flex;
+  list-style:none;
+  gap:25px;
+}
+
+.menu a{
+  text-decoration:none;
+  color:white;
+  font-weight:500;
+  transition:0.3s;
+}
+
+.menu a:hover{
+  color:#c8ffb0;
+}
+
+/* HERO */
+
+.hero{
+  height:100vh;
+  background:url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=1400&auto=format&fit=crop') center/cover;
+  position:relative;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  color:white;
+}
+
+.overlay{
+  position:absolute;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.5);
+}
+
+.hero-content{
+  position:relative;
+  z-index:2;
+  max-width:700px;
+  padding:20px;
+}
+
+.hero h1{
+  font-size:4rem;
+  margin-bottom:20px;
+}
+
+.hero p{
+  font-size:1.3rem;
+  margin-bottom:30px;
+}
+
+.hero button{
+  padding:15px 30px;
+  border:none;
+  background:#43a047;
+  color:white;
+  font-size:18px;
+  border-radius:10px;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.hero button:hover{
+  background:#2e7d32;
+  transform:scale(1.05);
+}
+
+/* SOBRE */
+
+.sobre{
+  padding:100px 10%;
+  text-align:center;
+}
+
+.sobre h2{
+  font-size:2.5rem;
+  margin-bottom:20px;
+  color:#1b5e20;
+}
+
+.sobre p{
+  margin-bottom:50px;
+}
+
+.cards{
+  display:flex;
+  gap:30px;
+  flex-wrap:wrap;
+  justify-content:center;
+}
+
+.card{
+  background:white;
+  width:300px;
+  padding:30px;
+  border-radius:20px;
+  box-shadow:0 5px 15px rgba(0,0,0,0.1);
+  transition:0.4s;
+}
+
+.card:hover{
+  transform:translateY(-10px);
+}
+
+.card h3{
+  margin-bottom:15px;
+  color:#2e7d32;
+}
+
+/* TECNOLOGIA */
+
+.tecnologia{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  padding:80px 10%;
+  background:#e8f5e9;
+  gap:40px;
+}
+
+.texto{
+  flex:1;
+}
+
+.texto h2{
+  font-size:2.5rem;
+  color:#1b5e20;
+  margin-bottom:20px;
+}
+
+.texto ul{
+  margin-top:20px;
+  line-height:2;
+}
+
+.imagem{
+  flex:1;
+}
+
+.imagem img{
+  width:100%;
+  border-radius:20px;
+  box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* CONTADOR */
+
+.impacto{
+  padding:100px 10%;
+  text-align:center;
+}
+
+.impacto h2{
+  font-size:2.5rem;
+  margin-bottom:50px;
+  color:#1b5e20;
+}
+
+.numeros{
+  display:flex;
+  justify-content:center;
+  gap:40px;
+  flex-wrap:wrap;
+}
+
+.numero{
+  background:white;
+  width:250px;
+  padding:40px;
+  border-radius:20px;
+  box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.numero h3{
+  font-size:3rem;
+  color:#2e7d32;
+}
+
+/* GALERIA */
+
+.galeria{
+  padding:100px 10%;
+  background:#f1f8e9;
+  text-align:center;
+}
+
+.galeria h2{
+  margin-bottom:40px;
+  font-size:2.5rem;
+  color:#1b5e20;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+}
+
+.grid img{
+  width:100%;
+  height:250px;
+  object-fit:cover;
+  border-radius:15px;
+  transition:0.4s;
+}
+
+.grid img:hover{
+  transform:scale(1.05);
+}
+
+/* CONTATO */
+
+.contato{
+  padding:100px 10%;
+  text-align:center;
+}
+
+.contato h2{
+  margin-bottom:40px;
+  font-size:2.5rem;
+  color:#1b5e20;
+}
+
+form{
+  max-width:600px;
+  margin:auto;
+  display:flex;
+  flex-direction:column;
+  gap:20px;
+}
+
+input, textarea{
+  padding:15px;
+  border:1px solid #ccc;
+  border-radius:10px;
+  font-size:16px;
+}
+
+textarea{
+  height:150px;
+}
+
+form button{
+  background:#2e7d32;
+  color:white;
+  padding:15px;
+  border:none;
+  border-radius:10px;
+  cursor:pointer;
+  font-size:18px;
+}
+
+form button:hover{
+  background:#1b5e20;
+}
+
+/* FOOTER */
+
+footer{
+  background:#1b5e20;
+  color:white;
+  text-align:center;
+  padding:25px;
+}
+
+/* RESPONSIVO */
+
+@media(max-width:768px){
+
+  .hero h1{
+    font-size:2.5rem;
+  }
+
+  .navbar{
+    flex-direction:column;
+    gap:15px;
+  }
+
+  .menu{
+    flex-wrap:wrap;
+    justify-content:center;
+  }
+
+}
