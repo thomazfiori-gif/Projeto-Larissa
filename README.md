@@ -8,6 +8,7 @@ O AgroTech – Agro Forte, Futuro Sustentável é um projeto de desenvolvimento 
 O site foi desenvolvido para demonstrar a aplicação prática dos conhecimentos de programação e desenvolvimento web, unindo design moderno, responsividade e interatividade.
 
 🎯 Objetivos
+
 Conscientizar sobre a importância da sustentabilidade no agronegócio.
 Apresentar tecnologias utilizadas na agricultura moderna.
 Demonstrar a aplicação de HTML, CSS e JavaScript em um projeto real.
@@ -15,6 +16,7 @@ Desenvolver uma interface intuitiva, moderna e responsiva.
 Incentivar o uso da tecnologia para reduzir os impactos ambientais.
 
 🚀 Funcionalidades
+
 Menu de navegação entre as seções da página.
 Página inicial com mensagem interativa.
 Seção explicando a sustentabilidade no agronegócio.
@@ -25,10 +27,15 @@ Formulário de contato.
 Layout responsivo para diferentes dispositivos.
 
 🛠 Tecnologias Utilizadas
+
 HTML5
+
 CSS3
+
 JavaScript
+
 Google Fonts (Poppins)
+
 📂 Estrutura do Projeto
 📁 AgroTech
 │
@@ -38,6 +45,7 @@ Google Fonts (Poppins)
 └── README.md
 
 💻 Como Executar
+
 Faça o download ou clone este repositório.
 Abra a pasta do projeto.
 Execute o arquivo index.html em qualquer navegador moderno.
